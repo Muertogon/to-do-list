@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+  </head>
+  <body>
+  
+  <div class="container mt-4">
+    <div id="form">
+      <div class="form-group">
+        <label for="Subject">Subject</label>
+        <input type="text" id="subject" name="subjectname" placeholder="Subject" class="ifield">
+      </div>
+      <div class="form-group">
+        <select id="priority" name="status" class="ifield">
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="duedate">Due date</label>
+        <input type="date" id="duedate"
+        class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="status">Status</label>
+         <select id="status" name="status" class="ifield">
+          <option value="Complete">Complete</option>
+          <option value="In Progress">In progress</option>
+          <option value="New">New</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="percentcompl">Percent Completed</label>
+        <input type="text" id="percentcompl" name="pcompletedn"
+        class="ifield">
+      </div>
+      <div class="form-group">
+        <label for="modifydate">Modified on</label>
+        <input type="date" id="modifydate"
+        class="form-control">
+      </div>
+      <input type="submit" value="Add task" class="btn btn-primary btn-block ifield" id="addtask">
+    </form>
+    <table style="width:1000px" class="table" id="table">
+      <thead>
+        <tr>
+          <th><i class="fa fa-bar-chart"></i></th>
+          <th class="subject item">Subject</th>
+          <th class="priority item">Priority</th>
+          <th class="duedate item">Due date</th>
+          <th class="status item">Status</th>
+          <th class="pcompleted item">Percent complete</th>
+          <th class="moddate item"> Date modified</th>
+          <th class="remove item">Remove</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="task-list"></tbody>
+      <table>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
